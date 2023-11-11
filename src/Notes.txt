@@ -1,0 +1,51 @@
+/* Video Notes */
+
+Module Content:
+
+-> What is Client-side "Routing"
+
+-> Using React-Router
+
+-> Advance Features: Dynamic & Nested Routes
+
+
+
+/welcome like different path
+
+page change = New Requests + Response
+
+
+
+Building SPAs
+
+->When building complex user interfaces, we typically build Single Page Applications (SPAs)
+
+->Only one initial HTML request and response
+
+->Page (url) changes are then handled by client-side (React) code (changes the visible content without fetching a new HTML file)
+
+we want a package which does all the routing and which looks at the url and brings different components on to the screen based on url changes but which does all of that in browser so we use a third party package that does that known as react router it is the package which u have to install seperatly it's not built in to react. it give us a feature to implement client side routing u can visit reactrouter.com or github repo
+
+
+
+react router provides client side routing (routing simply means is different url different path in url load different pages),
+
+load means render , conditionaly render
+
+our-domain.com/ => component a
+
+our-domain.com/products => component b
+
+
+
+in rootfile we need to import browserrouter and wrap the overall app
+
+{/* whenever we click on "a" link it refresh it send the whole network request by using link we can prevent */}
+
+      {/* <a href='/welcome'>Welcome</a> */}
+
+      <Link to='/welcome'>Welcome</Link>
+
+
+
+now to highlight the active link react router have a extra feature instead of using the regurlar link we can use the Nav.link component it stil ccreate a anchor tag navlink also set a css class on the active item we just have to telllink which class to add  by doing this activeClassName
