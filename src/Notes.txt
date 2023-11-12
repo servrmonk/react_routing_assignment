@@ -49,3 +49,53 @@ in rootfile we need to import browserrouter and wrap the overall app
 
 
 now to highlight the active link react router have a extra feature instead of using the regurlar link we can use the Nav.link component it stil ccreate a anchor tag navlink also set a css class on the active item we just have to telllink which class to add  by doing this activeClassName
+
+
+we always want to run product page with diff data 
+
+because we need different type of information based on the product we clicked on we definetly wonna use one of the same component but we need a way of telling react router for which specific product is component should be loaded so that inside of these component we can than kind of retrieve that extra product data 
+
+for this we define dynamic routes instead of just defining /product-detail 
+
+<Route path=`/product-details/:productId` /> thisis the dynamic part segment this tells react router that overall pathfor which thispage should be loaded will be something like this
+
+//our-domain.com/product-detail/<any value /> its a place holder anything  this is a dynamic segment and it takes any value so this component  inside this will be loaded on <the value that is present here />
+
+
+
+ se we need the value of productId    <Route path=`/product-details/:productId` />
+
+we use the useParams hook  : this useParams returns a params object which we can store in the constant 
+
+const params = useParams() . the params object will have key value pair where the keys is dynamic section leading to the page  in this caswe have 1 segment  :productId . u can console 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -4,6 +4,8 @@ import "./App.css";
 import Welcome from "./components/Welcome";
 import Products from "./components/Products";
 import MainHeader from "./components/MainHeader";
+import ProductDetails from "./components/ProductDetails";
+
 
 function App() {
   return (
@@ -13,7 +15,10 @@ function App() {
         <Routes>
           <Route path="/welcome" element={<Welcome />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/product-detail/:productId" element={<ProductDetails />} />
+          
         </Routes>
+        
       </main>
       {/* <h2>Let's get started</h2> */}
     </div>
