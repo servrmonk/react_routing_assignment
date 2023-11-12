@@ -6,19 +6,21 @@ import Products from "./components/Products";
 import MainHeader from "./components/MainHeader";
 import ProductDetails from "./components/ProductDetails";
 
-
 function App() {
   return (
     <div className="App">
       <MainHeader />
       <main>
         <Routes>
-          <Route path="/welcome" element={<Welcome />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/product-detail/:productId" element={<ProductDetails />} />
-          
+          <Route path="/welcome/*" element={<Welcome />} />
+          <Route path="/products"  element={<Products />} />
+          {/* <Route path="/welcome/new-user" element={<Welcome/>} /> */}
+
+          <Route
+            path="/products/:productId"
+            element={<ProductDetails />}
+          />
         </Routes>
-        
       </main>
       {/* <h2>Let's get started</h2> */}
     </div>

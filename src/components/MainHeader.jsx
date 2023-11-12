@@ -9,9 +9,6 @@ export default function MainHeader() {
         <nav>
           <ul>
             <li>
-              {/* whenever we click on "a" link it refresh it send the whole network request by using link we can prevent  
-             <a href='/welcome'>Welcome</a>  */}
-              {/* <Link to='/welcome'>Welcome</Link>  */}
               <NavLink
                 className={(navData) => (navData.isActive ? "active" : "")}
                 to="/welcome"
@@ -21,7 +18,7 @@ export default function MainHeader() {
             </li>
             <li>
               <NavLink
-                className={(navData) => (navData.isActive ? "active" : "")}
+                className={(navData) => (navData.isActive ? "active" : "")} to='/products'
               >
                 Products
               </NavLink>
