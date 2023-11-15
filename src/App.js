@@ -1,10 +1,14 @@
 import { Route, Routes } from "react-router-dom"; //and route b actually b a component
 
 import "./App.css";
-import Welcome from "./components/Welcome";
-import Products from "./components/Products";
+
+
 import MainHeader from "./components/MainHeader";
-import ProductDetails from "./components/ProductDetails";
+import ProductDetails from "./pages/ProductDetails";
+import Welcome from "./pages/Welcome";
+import Products from "./pages/Products";
+
+
 
 function App() {
   return (
@@ -28,6 +32,3 @@ function App() {
 }
 
 export default App;
-
-//  our-domain.com/welcome = welcome components
-// our-domain.com/products = products component
